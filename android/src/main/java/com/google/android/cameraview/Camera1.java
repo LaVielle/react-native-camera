@@ -369,7 +369,7 @@ class Camera1 extends CameraViewImpl implements MediaRecorder.OnInfoListener,
 
     @Override
     boolean isCameraOpened() {
-        return mCamera != null;
+        return mCamera != null && mCameraParameters != null;
     }
 
     @Override
